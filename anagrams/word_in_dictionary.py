@@ -1,4 +1,4 @@
-tt = ['a','b','bakj','call','hello','grey','callme','callok','callon','zzzzz','cbjkoj']  #[123 , 221 ,311,.... ]
+tt = ['bakj','call','hello','grey','callme','callok','callon','zzzzz','cbjkoj']  #[123 , 221 ,311,.... ]
 t = list(tt)
 sum =0
 x=1
@@ -34,24 +34,20 @@ for i in t:
   y = dic[:]  
 #nm = int()
 nm = input()
-num =int(nm)
+#num =int(nm)
 nm = int(nm)%13
 dic = [int(x) for x in dic]
-print (dic)
+#print (dic)
 f=0
-print(nm)
+#print(nm)
 while f<len(dic):
   g = dic[f]
   if(g == nm):
     final.append(f)
   f=f+1
-#print(dup)
-#print(final)
-#print(num)
 final = [int(x) for x in final]
 dup = [int(x) for x in dup]
 for i in final:
-  #if dup[i] == num:
   print(tt[i])
 
 #print(final)
